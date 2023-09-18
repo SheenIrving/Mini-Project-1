@@ -81,48 +81,105 @@
       <div class="coverphoto" id="cover"></div>
     </section>
 
-    <!-- <section class="navbar navbar-expand-md">
-      <div class="container">
-        <div>
-          <button
-            class="navbar-toggler bg-green"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#filterMenu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </section> -->
-
     <section class="mb-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-sm-12 pt-2">
             <div>
-              <h2 class="d-flex justify-content-center">Filter Selection</h2>
+              <h2 class="d-flex justify-content-center">Filter your Hemp</h2>
               <ul class="pt-2 d-flex justify-content-center">
-                <form action="/action_page.php">
-                  <div class="form-check">
+                <form action="/action_page.php" id="filtermenu">
+                  <p class="lead">By Popularity</p>
+                  <div class="form-check filterMenu">
                     <input
                       type="checkbox"
                       class="form-check-input"
                       id="check1"
-                      name="option1"
-                      value="something"
+                      name="HotSelling"
+                      value="HotSelling"
                     />
-                    <label class="form-check-label">Hot Selling</label>
+                    <label class="form-check-label pb-2">Hot Selling</label>
                   </div>
-                  <div class="form-check">
+                  <div class="form-check filterMenu">
                     <input
                       type="checkbox"
                       class="form-check-input"
                       id="check2"
-                      name="option2"
-                      value="something"
+                      name="NewShirts"
+                      value="NewShirts"
                     />
-                    <label class="form-check-label">New Shirts</label>
+                    <label class="form-check-label pb-3">New Shirts</label>
+                  </div>
+                  <p class="pt-4 lead">By Reviews</p>
+                  <div class="form-check filterMenu">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="check2"
+                      name="5-hemps"
+                      value="5-hemps"
+                    />
+                    <label class="form-check-label pb-2"
+                      ><i class="fa-solid fa-cannabis"></i>
+                      <i class="fa-solid fa-cannabis"></i>
+                      <i class="fa-solid fa-cannabis"></i>
+                      <i class="fa-solid fa-cannabis"></i>
+                      <i class="fa-solid fa-cannabis"></i>
+                    </label>
+                  </div>
+                  <div class="form-check filterMenu">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="check2"
+                      name="4-hemps"
+                      value="4-hemps"
+                    />
+                    <label class="form-check-label pb-2"
+                      ><i class="fa-solid fa-cannabis"></i>
+                      <i class="fa-solid fa-cannabis"></i>
+                      <i class="fa-solid fa-cannabis"></i>
+                      <i class="fa-solid fa-cannabis"></i>
+                    </label>
+                  </div>
+                  <div class="form-check filterMenu">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="check2"
+                      name="3-hemps"
+                      value="3-hemps"
+                    />
+                    <label class="form-check-label pb-2"
+                      ><i class="fa-solid fa-cannabis"></i>
+                      <i class="fa-solid fa-cannabis"></i>
+                      <i class="fa-solid fa-cannabis"></i>
+                    </label>
+                  </div>
+                  <div class="form-check filterMenu">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="check2"
+                      name="2-hemps"
+                      value="2-hemps"
+                    />
+                    <label class="form-check-label pb-2"
+                      ><i class="fa-solid fa-cannabis"></i>
+                      <i class="fa-solid fa-cannabis"></i>
+                    </label>
+                  </div>
+                  <div class="form-check filterMenu">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="check2"
+                      name="1-hemp"
+                      value="1-hemp"
+                    />
+                    <label class="form-check-label"
+                      ><i class="fa-solid fa-cannabis"></i>
+                    </label>
                   </div>
                 </form>
               </ul>
@@ -360,6 +417,28 @@
       </div>
     </section>
 
+    <nav aria-label="page navigation">
+      <div class="container">
+        <ul class="pagination justify-content-end">
+          <li class="page-item">
+            <a class="page-link text-green disabled" href="#">Previous</a>
+          </li>
+          <li class="page-item active">
+            <a class="page-link text-green" href="#">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link text-green" href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link text-green" href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link text-green" href="#">Next</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- Login Modal -->
 
     <div class="modal fade" id="login" tabindex="-1">
@@ -417,15 +496,33 @@
     <!-- Footer -->
     <footer class="bg-black pt-3 text-center border-top border-success-subtle">
       <div class="container">
-        <div>
-          <a href="https://www.facebook.com/luntian420/"
-            ><i class="bi bi-facebook text-green"></i
-          ></a>
-          <a href="#"><i class="bi bi-twitter text-green"></i></a>
-          <a href="#"><i class="bi bi-instagram text-green"></i></a>
-        </div>
-        <div>
-          <p>Copyright &copy; 2023 - Luntian</p>
+        <div class="row">
+          <div class="col-lg-4 col-sm-4" id="payments">
+            <p>Payment Options</p>
+            <img src="./images/bpi.jpg" alt="BPI" />
+            <img src="./images/gcash.jpg" alt="Gcash" />
+            <img src="./images/maya.jpg" alt="Maya" />
+          </div>
+
+          <div class="col-lg-4 col-sm-4 align-self-center">
+            <p>Copyright &copy; 2023 - Luntian</p>
+          </div>
+
+          <div class="col-lg-4 col-sm-4 social">
+            <p>Follow us</p>
+            <a href="https://www.facebook.com/luntian420/" class="text-green"
+              ><i class="bi bi-facebook text-green"></i> Facebook</a
+            >
+            <a href="#" class="text-green"
+              ><i class="bi bi-twitter text-green"></i> Twitter</a
+            >
+            <a href="#" class="text-green"
+              ><i class="bi bi-instagram text-green"></i> Instagram</a
+            >
+            <a href="#" class="text-green"
+              ><i class="bi bi-tiktok text-green"></i> Tiktok</a
+            >
+          </div>
         </div>
       </div>
     </footer>

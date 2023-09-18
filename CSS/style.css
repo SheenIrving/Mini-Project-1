@@ -68,6 +68,11 @@ body {
 h2 {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
+  font-family: cursive;
+}
+
+h4 {
+  font-family: cursive;
 }
 
 #map {
@@ -117,15 +122,40 @@ h2 {
   background-color: black;
 }
 
-/* Responsiveness */
+#payments img {
+  width: 60px;
+}
 
-@media (max-width: 767px) {
-  #featuredproducts .card {
-    margin-bottom: 20px;
-  }
-  #newproducts .card {
-    margin-bottom: 20px;
-  }
+.social a {
+  text-decoration: none;
+}
+
+.form-check-input:focus {
+  border-color: green;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(0, 240, 72, 0.966);
+}
+
+.form-check-input:checked {
+  background-color: green;
+  border-color: green;
+}
+
+.form-check-input:checked[type="checkbox"] {
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+
+.pagination {
+  --bs-pagination-active-color: black;
+  --bs-pagination-active-bg: green;
+  --bs-pagination-active-border-color: green;
+  --bs-pagination-disabled-color: var(--bs-body-color);
+  --bs-pagination-disabled-bg: var(--bs-body-bg);
+}
+
+.pagination a:hover {
+  color: black;
+  background-color: green;
 }
 
 #mainMenu li {
@@ -136,8 +166,41 @@ h2 {
   text-align: center;
 }
 
+/* Responsiveness */
+
+@media (max-width: 989px) {
+  .filterMenu {
+    display: inline-flex;
+  }
+
+  #filtermenu {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  #featuredproducts .card {
+    margin-bottom: 20px;
+  }
+  #newproducts .card {
+    margin-bottom: 20px;
+  }
+  .pagination {
+    margin-right: 8.3rem;
+    padding-bottom: 20px;
+  }
+}
+
 @media (max-width: 575px) {
   #aboutusimage {
     margin-top: 20px;
+  }
+
+  #payments {
+    margin-bottom: 20px;
+  }
+
+  .social {
+    margin-top: 10px;
   }
 }
