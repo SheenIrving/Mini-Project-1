@@ -133,7 +133,7 @@ h4 {
 .form-check-input:focus {
   border-color: green;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(0, 240, 72, 0.966);
+  box-shadow: none;
 }
 
 .form-check-input:checked {
@@ -151,6 +151,9 @@ h4 {
   --bs-pagination-active-border-color: green;
   --bs-pagination-disabled-color: var(--bs-body-color);
   --bs-pagination-disabled-bg: var(--bs-body-bg);
+  --bs-pagination-focus-color: var(---bs-body-color);
+  --bs-pagination-focus-bg: var(--bs-body-bg);
+  --bs-pagination-focus-box-shadow: none;
 }
 
 .pagination a:hover {
