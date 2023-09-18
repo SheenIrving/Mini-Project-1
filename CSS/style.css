@@ -3,6 +3,7 @@ body {
   background: black;
 }
 
+/* Utility Classes */
 :root {
   --bs-border-color: green;
   --bs-body-color: green;
@@ -16,6 +17,7 @@ body {
   background: green;
 }
 
+/* CSS */
 #main-menu #mainMenu a:focus {
   color: green;
 }
@@ -114,6 +116,8 @@ h2 {
 .modal-body form input:focus {
   background-color: black;
 }
+
+/* Responsiveness */
 
 @media (max-width: 767px) {
   #featuredproducts .card {

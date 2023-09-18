@@ -99,20 +99,10 @@
     <section class="mb-5">
       <div class="container">
         <div class="row">
-          <div class="col-3 pt-2">
-            <div class="navbar navbar-expand-md">
-              <button
-                class="navbar-toggler bg-green"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#filterMenu"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-            <div id="filterMenu" class="collapse navbar-collapse">
-              <h2>Filter Selection</h2>
-              <ul class="pt-2">
+          <div class="col-lg-3 col-sm-12 pt-2">
+            <div>
+              <h2 class="d-flex justify-content-center">Filter Selection</h2>
+              <ul class="pt-2 d-flex justify-content-center">
                 <form action="/action_page.php">
                   <div class="form-check">
                     <input
@@ -139,14 +129,19 @@
             </div>
           </div>
 
-          <div class="col-9">
+          <div class="col-lg-9 col-md-12 col-sm-12">
             <div class="row">
-              <div class="col-12">
+              <div class="col-lg-12">
                 <aside class="bg-black text-center" id="featuredproducts">
-                  <h2>Choose Your Poison</h2>
-                  <div class="row pt-3">
+                  <h2 class="d-flex justify-content-center">
+                    Choose Your Poison
+                  </h2>
+                  <div class="row pt-3 d-flex justify-content-center">
                     <!-- First Card -->
-                    <div href="#" class="col-md-4 col-sm-12" id="bestselling">
+                    <div
+                      class="col-md-4 col-sm-12 col-lg-4 d-flex justify-content-center"
+                      id="bestselling"
+                    >
                       <div
                         class="card border border-2 border-success bg-black text-green"
                       >
@@ -178,7 +173,9 @@
                       </div>
                     </div>
                     <!-- Second Card -->
-                    <div class="col-md-4 col-sm-12">
+                    <div
+                      class="col-md-4 col-sm-12 col-lg-4 d-flex justify-content-center"
+                    >
                       <div
                         class="card border border-2 border-success bg-black text-green"
                       >
@@ -210,7 +207,9 @@
                       </div>
                     </div>
                     <!-- Third Card -->
-                    <div class="col-md-4 col-sm-12">
+                    <div
+                      class="col-md-4 col-sm-12 col-lg-4 d-flex justify-content-center"
+                    >
                       <div
                         class="card border border-2 border-success bg-black text-green"
                       >
@@ -220,7 +219,7 @@
                           class="card-img-top"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Kushes&Cream</h4>
+                          <h4 class="card-title">Kushes & Cream</h4>
                           <p class="card-text">
                             Available Colors: White & Black <br />
                             Available Sizes: S / M / L / XL / XXL <br />
@@ -244,9 +243,13 @@
                   </div>
                   <!-- Next Row -->
 
-                  <div class="row pt-3">
+                  <div
+                    class="row pt-3 d-flex justify-content-center d-flex justify-content-center"
+                  >
                     <!-- First Card -->
-                    <div class="col-md-4">
+                    <div
+                      class="col-md-4 col-sm-12 col-lg-4 d-flex justify-content-center"
+                    >
                       <div
                         class="card border border-2 border-success bg-black text-green"
                       >
@@ -256,7 +259,7 @@
                           class="card-img-top"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">ChokeOnGrass</h4>
+                          <h4 class="card-title">Choke On Grass</h4>
                           <p class="card-text">
                             Available Colors: White & Black <br />
                             Available Sizes: S / M / L / XL / XXL <br />
@@ -281,7 +284,9 @@
                       </div>
                     </div>
                     <!-- Second Card -->
-                    <div class="col-md-4">
+                    <div
+                      class="col-md-4 col-sm-12 col-lg-4 d-flex justify-content-center"
+                    >
                       <div
                         class="card border border-2 border-success bg-black text-green"
                       >
@@ -313,7 +318,9 @@
                       </div>
                     </div>
                     <!-- Third Card -->
-                    <div class="col-md-4">
+                    <div
+                      class="col-md-4 col-sm-12 col-lg-4 d-flex justify-content-center"
+                    >
                       <div
                         class="card border border-2 border-success bg-black text-green"
                       >
@@ -352,6 +359,60 @@
         </div>
       </div>
     </section>
+
+    <!-- Login Modal -->
+
+    <div class="modal fade" id="login" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content bg-black">
+          <div class="modal-header">
+            <img src="./images/Logo2.JPG" alt="Luntian Logo" width="150" />
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Login to Luntian</p>
+            <form action="process.php">
+              <div class="mb-3">
+                <label for="username/email" class="col-form-label"
+                  >Username/Email</label
+                >
+                <input
+                  type="text"
+                  class="form-control border-2 border-success"
+                  id="username-email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="col-form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control border-2 border-success"
+                  id="last_name"
+                />
+              </div>
+            </form>
+          </div>
+          <button
+            type="submit"
+            class="btn text-black bg-green align-self-center"
+            id="loginbtn"
+          >
+            Login
+          </button>
+          <div class="align-self-center mt-3" id="forgotpw">
+            <a href="#">Forgot Password?</a><br />
+          </div>
+          <div class="align-self-center mt-3" id="signup">
+            <p>Don't have an account? <a href="#">Sign Up Here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-black pt-3 text-center border-top border-success-subtle">
