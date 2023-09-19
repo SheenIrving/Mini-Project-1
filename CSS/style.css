@@ -170,6 +170,18 @@ h4 {
   text-align: center;
 }
 
+.btn-info {
+  --bs-btn-color: #000;
+  --bs-btn-bg: green;
+  --bs-btn-border-color: green;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: green;
+  --bs-btn-hover-border-color: green;
+}
+
+#search-here input#search::-webkit-input-placeholder {
+  color: green;
+}
 /* Responsiveness */
 
 @media (max-width: 989px) {
